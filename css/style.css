@@ -4,3 +4,49 @@
     box-sizing: border-box;
 }
 
+:root {
+    --bg-color-primary: #9792e4;
+    --bg-color-secondary: #0084fd;
+    --bg-color-secondary-light: #b5ddff;
+    --bg-color-tertiary: #333333;
+    --bg-color-quartiary: #fdc15f;
+}
+
+
+
+.section {
+    padding: 2rem 0rem;
+}
+
+.container {
+    width: 980px;
+    margin: 0 auto;
+    padding: 0rem 1rem;
+
+    /* DEBUG */
+    border: 1px dashed blue;
+}
+
+
+
+
+.bg-color-primary {
+    background-color: var(--bg-color-primary);
+}
+
+.bg-color-secondary {
+    background-color: var(--bg-color-secondary);
+}
+
+.bg-color-secondary-light {
+    background-color: var(--bg-color-secondary-light);
+}
+
+.bg-color-tertiary {
+    background-color: var(--bg-color-tertiary);
+}
+
+.bg-color-quartiary {
+    background-color: var(--bg-color-quartiary);
+}
+
