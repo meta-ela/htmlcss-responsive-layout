@@ -13,6 +13,10 @@
     --bg-color-secondary-light: #b5ddff;
     --bg-color-tertiary: #333333;
     --bg-color-quartiary: #fdc15f;
+
+    --bp-sm: 576px;
+    --bp-md: 768px;
+    --bp-lg: 992px;
 }
 
 
@@ -69,13 +73,14 @@
 
 .card {
     border-radius: 20px;
-    background-color: var(--bg-color-secondary-light);
+}
 
+.card-debug {
     /* DEBUG */
     border: 1px dashed green;
     min-height: 100px;
+    background-color: yellow;
 }
-
 
 
 /* navbar della pagina */
@@ -128,4 +133,32 @@
     border-radius: 20px;
     border: 0;
     padding: .5rem;
+}
+
+
+
+
+/* ******RESPONSIVE****** */
+/* breakpoints: 
+    576px - mobile
+    768px - tablet
+    992px - desktop
+ */
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: calc(var(--bp-md) - 1rem);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: calc(var(--bp-sm) - 1rem);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
 }
