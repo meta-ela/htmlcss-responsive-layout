@@ -13,6 +13,7 @@
     --bg-color-secondary-light: #b5ddff;
     --bg-color-tertiary: #333333;
     --bg-color-quartiary: #fdc15f;
+    --font-color-grey: #706e6e;
 
     --bp-sm: 576px;
     --bp-md: 768px;
@@ -23,6 +24,10 @@
 
 .section {
     padding: 2rem 0rem;
+}
+
+.section-padding-top {
+    padding-top: 5rem;
 }
 
 .container {
@@ -37,6 +42,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .column-direction {
@@ -64,7 +70,7 @@
 }
 
 .col-1 {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc((100% / 3) - 1rem);
 }
 
 .col-2 {
@@ -73,6 +79,12 @@
 
 .card {
     border-radius: 20px;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .card-debug {
@@ -82,8 +94,23 @@
     background-color: yellow;
 }
 
+.card-bg-white {
+    background-color: white;
+}
+
 
 /* navbar della pagina */
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.menu-bars {
+    align-items: center;
+    display: none;
+}
+
 .menu, .logo {
     align-items: center;
 }
@@ -101,6 +128,77 @@
     text-decoration: none;
     color: white;
     
+}
+
+
+
+
+
+
+/* bottoni */
+.btn-default {
+    border-radius: 20px;
+    border: 0;
+    padding: .5rem;
+    background-color: white;
+}
+
+.btn-blue {
+    background-color: var(--bg-color-secondary);
+    color: white;
+    padding: .5rem 3rem;
+}
+
+
+/* immagini e icone */
+.widht-img {
+    width: 100%;
+}
+
+.xs-icons {
+    margin: 0rem .3rem;
+}
+
+.md-icons {
+    width: 50px;
+    height: 50px;
+    color: var(--bg-color-secondary);
+    margin-bottom: 1rem;
+}
+
+.bar-icon-menu {
+    color: white;
+    width: 20px;
+    height: 20px;
+}
+
+/* testi */
+h4 {
+    font-size: 1.2rem;
+}
+
+p {
+    
+    font-size: .8rem;
+    line-height: 1.5rem;
+}
+
+h4,
+p {
+    margin-bottom: 1.5rem;
+}
+
+.text-color-bg-secondary {
+    color: var(--bg-color-secondary);
+}
+
+.text-white {
+    color: white;
+}
+
+.font-bold-grey {
+    font-weight: bold;
+    color: var(--font-color-grey);
 }
 
 
@@ -128,15 +226,6 @@
 
 
 
-/* bottoni */
-.btn-default {
-    border-radius: 20px;
-    border: 0;
-    padding: .5rem;
-}
-
-
-
 
 /* ******RESPONSIVE****** */
 /* breakpoints: 
@@ -153,12 +242,36 @@
 
 @media screen and (max-width: 768px) {
     .container {
-        width: calc(var(--bp-sm) - 1rem);
+        width: 576px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-bars {
+        display: block;
+    }
+
+    .col-direction-column {
+        flex-direction: column;
+    }
+
+    .col-md-full {
+        flex-basis: 100%;
+    }
+
+    .col-md-half {
+        flex-basis: calc((100% / 2) - 1rem);
     }
 }
 
 @media screen and (max-width: 576px) {
     .container {
         width: 100%;
+    }
+
+    .col-sm-full {
+        flex-basis: 100%;
     }
 }

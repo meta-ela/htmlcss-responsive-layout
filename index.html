@@ -7,6 +7,7 @@
     <title>Prova sito</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     
@@ -31,6 +32,9 @@
                             <button class="btn-default">Get Started</button>
                         </div>
                     </div>
+                    <div class="menu-bars flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="currentColor" class="bar-icon-menu"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg>
+                    </div>
                 </div>
             </div>
             
@@ -39,32 +43,47 @@
 
     <main>
         <!-- sezione bianca con riquadri azzurri -->
-        <div class="section">
+        <div class="section section-padding-top">
             <div class="container">
                 <div class="row">
-                    <div class="col col-2">
-                        <div class="card ">
-
+                    <div class="col col-2 col-sm-full">
+                        <div class="card bg-color-secondary-light flex col-direction-column">
+                            <div>
+                                <h4 class="text-color-bg-secondary">Get a demo application</h4>
+                                <p class="font-bold-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda, labore ea voluptatibus dolore nostrum id earum culpa ut! Nihil libero, pariatur dignissimos eos nemo fuga ipsa eligendi eum veniam.</p>
+                                <button class="btn-default btn-blue">
+                                    <i class="fa-brands fa-apple xs-icons"></i>
+                                    App Store</button>
+                            </div>
+                            <div><img class="widht-img" src="img/phone.png" alt=""></div> 
                         </div>
                     </div>
-                    <div class="col col-1">
-                        <div class="card">
-                            
+                    <div class="col col-1 col-sm-full">
+                        <div class="card text-center bg-color-secondary-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="currentColor" class="md-icons"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128zM154.1 353.8c7.812 7.812 7.812 20.5 0 28.31C150.2 386.1 145.1 388 140 388s-10.23-1.938-14.14-5.844l-48-48c-7.812-7.812-7.812-20.5 0-28.31l48-48c7.812-7.812 20.47-7.812 28.28 0s7.812 20.5 0 28.31L120.3 320L154.1 353.8zM306.1 305.8c7.812 7.812 7.812 20.5 0 28.31l-48 48C254.2 386.1 249.1 388 244 388s-10.23-1.938-14.14-5.844c-7.812-7.812-7.812-20.5 0-28.31L263.7 320l-33.86-33.84c-7.812-7.812-7.812-20.5 0-28.31s20.47-7.812 28.28 0L306.1 305.8zM256 0v128h128L256 0z"/></svg>
+                            <h4 class="text-color-bg-secondary" >Clean Code</h4>
+                            <p class="font-bold-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda, labore ea voluptatibus dolore nostrum id earum culpa ut! Nihil libero, pariatur dignissimos eos nemo fuga ipsa eligendi eum veniam.</p>
                         </div>
                     </div>
-                    <div class="col col-1">
-                        <div class="card">
-                            
+                    <div class="col col-1 col-sm-full">
+                        <div class="card text-center bg-color-secondary-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="md-icons"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 96C352 110.3 348.9 123.9 343.2 136.2L396 227.4C372.3 252.7 341.9 271.5 307.6 281L256 192H255.1L187.9 309.5C209.4 316.3 232.3 320 256 320C326.7 320 389.8 287.3 430.9 235.1C441.9 222.2 462.1 219.1 475.9 231C489.7 242.1 491.9 262.2 480.8 276C428.1 341.8 346.1 384 256 384C220.6 384 186.6 377.6 155.3 365.9L98.65 463.7C93.95 471.8 86.97 478.4 78.58 482.6L23.16 510.3C18.2 512.8 12.31 512.5 7.588 509.6C2.871 506.7 0 501.5 0 496V440.6C0 432.2 2.228 423.9 6.46 416.5L66.49 312.9C53.66 301.6 41.84 289.3 31.18 276C20.13 262.2 22.34 242.1 36.13 231C49.92 219.1 70.06 222.2 81.12 235.1C86.79 243.1 92.87 249.8 99.34 256.1L168.8 136.2C163.1 123.9 160 110.3 160 96C160 42.98 202.1 0 256 0C309 0 352 42.98 352 96L352 96zM256 128C273.7 128 288 113.7 288 96C288 78.33 273.7 64 256 64C238.3 64 224 78.33 224 96C224 113.7 238.3 128 256 128zM372.1 393.9C405.5 381.1 435.5 363.2 461.8 341L505.5 416.5C509.8 423.9 512 432.2 512 440.6V496C512 501.5 509.1 506.7 504.4 509.6C499.7 512.5 493.8 512.8 488.8 510.3L433.4 482.6C425 478.4 418.1 471.8 413.3 463.7L372.1 393.9z"/></svg>                            
+                            <h4 class="text-color-bg-secondary" >Web Design</h4>
+                            <p class="font-bold-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda, labore ea voluptatibus dolore nostrum id earum culpa ut! Nihil libero, pariatur dignissimos eos nemo fuga ipsa eligendi eum veniam.</p>
                         </div>
                     </div>
-                    <div class="col col-1">
-                        <div class="card">
-                            
+                    <div class="col col-1 col-sm-full">
+                        <div class="card text-center bg-color-secondary-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="currentColor" class="md-icons"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M128 96h384v256h64V80C576 53.63 554.4 32 528 32h-416C85.63 32 64 53.63 64 80V352h64V96zM624 384h-608C7.25 384 0 391.3 0 400V416c0 35.25 28.75 64 64 64h512c35.25 0 64-28.75 64-64v-16C640 391.3 632.8 384 624 384zM365.9 286.2C369.8 290.1 374.9 292 380 292s10.23-1.938 14.14-5.844l48-48c7.812-7.813 7.812-20.5 0-28.31l-48-48c-7.812-7.813-20.47-7.813-28.28 0c-7.812 7.813-7.812 20.5 0 28.31l33.86 33.84l-33.86 33.84C358 265.7 358 278.4 365.9 286.2zM274.1 161.9c-7.812-7.813-20.47-7.813-28.28 0l-48 48c-7.812 7.813-7.812 20.5 0 28.31l48 48C249.8 290.1 254.9 292 260 292s10.23-1.938 14.14-5.844c7.812-7.813 7.812-20.5 0-28.31L240.3 224l33.86-33.84C281.1 182.4 281.1 169.7 274.1 161.9z"/></svg>                            
+                            <h4 class="text-color-bg-secondary" >Development</h4>
+                            <p class="font-bold-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda, labore ea voluptatibus dolore nostrum id earum culpa ut! Nihil libero, pariatur dignissimos eos nemo fuga ipsa eligendi eum veniam.</p>
                         </div>
                     </div>
-                    <div class="col col-1">
-                        <div class="card">
-                            
+                    <div class="col col-1 col-sm-full">
+                        <div class="card text-center bg-color-secondary-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="currentColor" class="md-icons"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M480 179.6C498.6 188.4 512 212.1 512 240C512 267.9 498.6 291.6 480 300.4V448C480 460.9 472.2 472.6 460.2 477.6C448.3 482.5 434.5 479.8 425.4 470.6L381.7 426.1C333.7 378.1 268.6 352 200.7 352H192V480C192 497.7 177.7 512 160 512H96C78.33 512 64 497.7 64 480V352C28.65 352 0 323.3 0 288V192C0 156.7 28.65 128 64 128H200.7C268.6 128 333.7 101 381.7 53.02L425.4 9.373C434.5 .2215 448.3-2.516 460.2 2.437C472.2 7.39 480 19.06 480 32V179.6zM200.7 192H192V288H200.7C280.5 288 357.2 317.8 416 371.3V108.7C357.2 162.2 280.5 192 200.7 192V192z"/></svg>                            
+                            <h4 class="text-color-bg-secondary" >Branding</h4>
+                            <p class="font-bold-grey">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt assumenda, labore ea voluptatibus dolore nostrum id earum culpa ut! Nihil libero, pariatur dignissimos eos nemo fuga ipsa eligendi eum veniam.</p>
                         </div>
                     </div>
                 </div>
@@ -76,8 +95,28 @@
         <div class="section bg-color-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col"><div class="card card-debug"></div></div>
-                    <div class="col"><div class="card card-debug"></div></div>
+                    <div class="col col-md-full">
+                        <div class="card">
+                            <div>
+                                <img class="widht-img" src="img/planning1.png" alt="">
+                            </div>
+                            <div>
+                                <h4 class="text-white">Strategic Planning</h4>
+                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis quasi, possimus praesentium cumque, enim maiores sint dicta, placeat expedita consequatur ad rem porro! Deleniti, unde? Sed saepe porro adipisci rem.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-full">
+                        <div class="card card-bg-white">
+                            <div>
+                                <img class="widht-img" src="img/planning2.png" alt="">
+                            </div>
+                            <div>
+                                <h4>App Developement</h4>
+                                <p>Develop an on-demand app for you delivery business to reach your targeted customers without any interruption.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -98,12 +137,12 @@
         <div class="section bg-color-primary">
             <div class="container">
                 <div class="row">
-                    <div class="col col-1"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-md-half col-sm-full"><div class="card card-debug"></div></div>
                 </div>
             </div>
         </div>
@@ -112,8 +151,8 @@
         <div class="section">
             <div class="container">
                 <div class="row">
-                    <div class="col col-2"><div class="card card-debug"></div></div>
-                    <div class="col col-1"><div class="card card-debug"></div></div>
+                    <div class="col col-2 col-sm-full"><div class="card card-debug"></div></div>
+                    <div class="col col-1 col-sm-full"><div class="card card-debug"></div></div>
                 </div>
             </div>
         </div>
@@ -122,7 +161,7 @@
         <div class="section bg-color-primary">
             <div class="container">
                 <div class="row justify-center">
-                    <div class="col-2">
+                    <div class="col-2 col-sm-full">
                         <div class="card card-debug">
                             <div class="row justify-center">
                                 <div class="col-2">
@@ -141,7 +180,7 @@
         <div class="section bg-color-tertiary">
             <div class="container">
                 <div class="row justify-center">
-                    <div class="col-2">
+                    <div class="col-2 col-sm-full">
                         <div class="card card-debug">
                             <div class="row justify-center">
                                 <div class="col-2">
