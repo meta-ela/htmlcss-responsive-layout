@@ -32,16 +32,53 @@
 
 .row {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.column-direction {
+    flex-direction: column;
 }
 
 .space-between {
     justify-content: space-between;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .flex {
     display: flex;
 }
 
+
+
+/* colonne e card*/
+.col {
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.col-1 {
+    flex-basis: calc(100% / 3);
+}
+
+.col-2 {
+    flex-basis: calc((100% / 3) * 2);
+}
+
+.card {
+    border-radius: 20px;
+    background-color: var(--bg-color-secondary-light);
+
+    /* DEBUG */
+    border: 1px dashed green;
+    min-height: 100px;
+}
+
+
+
+/* navbar della pagina */
 .menu, .logo {
     align-items: center;
 }
@@ -62,6 +99,8 @@
 }
 
 
+
+/* classi per le variabili */
 .bg-color-primary {
     background-color: var(--bg-color-primary);
 }
@@ -82,3 +121,11 @@
     background-color: var(--bg-color-quartiary);
 }
 
+
+
+/* bottoni */
+.btn-default {
+    border-radius: 20px;
+    border: 0;
+    padding: .5rem;
+}
